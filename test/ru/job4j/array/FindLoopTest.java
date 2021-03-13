@@ -47,15 +47,4 @@ public class FindLoopTest {
         int expect = -1;
         Assert.assertThat(rst, is(expect));
     }
-
-    @Test
-    public void whenInvalidStart() {
-        int[] input = {2, 6, 7, 3, 8, 3, 5};
-        int start = -1;
-        int finish = 2;
-        int value = 3;
-        int rst = FindLoop.indexOf(input, value, start, finish);
-        int expect = -1;
-        Assert.assertThat(rst, is(expect));
-    }
 }
